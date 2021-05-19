@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Story Builder</title>
+    <style>
+      body {
+        color: #fff;
+        font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        box-sizing: border-box;
+        background-color: #939597;
+      }
+
+      main {
+        width: 90%;
+        max-width: 1080px;
+        padding: 57px 0 0;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 3.75em;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <script>
+          //Declare constant variables
+          const adjective = prompt("Enter an adjective");
+          const verb = prompt("Enter a verb");
+          const noun = prompt("Enter a noun");
+
+          //Construct the sentence using template literals 
+          const sentence = `<h1>There was once a ${adjective} programmer who wanted to use JavaScript to ${verb} the ${noun}</h1>`
+
+          //Pass back the message to the HTML file using querySelector
+          document.querySelector("main").innerHTML = sentence;
+      </script>
+    </main>
+  </body>
+</html>
